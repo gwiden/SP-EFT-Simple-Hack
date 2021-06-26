@@ -57,6 +57,15 @@ namespace EFT.CameraControl
             {
                 this.MainHackDestroy();
             }
+            if (Input.GetKeyDown(KeyCode.Home))
+            {
+                this.AimBotDestroy();
+                this.AimBotLoad();
+            }
+            if (Input.GetKeyDown(KeyCode.End))
+            {
+                this.AimBotDestroy();
+            }
         }
 
         private void LineHackLoad()
@@ -83,11 +92,29 @@ namespace EFT.CameraControl
             UnityEngine.Object.Destroy(load_MainHack);
         }
 
+        private void AimBotLoad()
+        {
+            load_AimBot = new GameObject();
+            load_AimBot.AddComponent<Aimbot>();
+            UnityEngine.Object.DontDestroyOnLoad(load_AimBot);
+        }
+        
+        private void AimBotDestroy()
+        {
+            UnityEngine.Object.Destroy(load_AimBot);
+        }
+
         //[SerializeField]
         //public float LodBiasFactor = 1f;
 
         //private float float_0 = 75f;
 
         //private float float_1 = 1f;
+        
+        public static GameObject load_LineHack;
+        
+        public static GameObject load_MainHack;
+        
+        public static GameObject load_AimBot;
     }
 }

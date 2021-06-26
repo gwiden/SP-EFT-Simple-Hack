@@ -18,4 +18,4 @@ Simple Hack for SP Escape From Tarkov
 
 [<img align="centre" width="700x" src="https://github.com/gwiden/gwiden/blob/main/assets/EFT%20Simple%20Hack/EFT.png" />][youtube]
 
-[youtube]: https://www.youtube.com/watch?v=nUwgoa78wYI
+[youtube]: https://youtu.be/BZ-4iXJVSgY

@@ -4,7 +4,7 @@ Simple Hack for SP Escape From Tarkov
 
 ### Функции
 
-* GameObject Insector
+* GameObject Inspector
 
 * BotTP
 

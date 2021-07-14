@@ -74,8 +74,12 @@ namespace EFT
         }
 
         private void FixedUpdate()
+        {
+            this._playerCoordinates = this._cam.transform.localPosition;
+        }
+
+        private void Update()
 		{
-			this._playerCoordinates = this._cam.transform.localPosition;
 			if (Input.GetKeyDown(KeyCode.KeypadPeriod))
 			{
 				this.GetObj();

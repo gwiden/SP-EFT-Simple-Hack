@@ -141,7 +141,7 @@ namespace EFT
 			LineHack.blendMaterial = (Material)typeof(GUI).GetMethod("get_blendMaterial", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, null);
 		}
 
-		private void Update()
+		private void FixedUpdate()
 		{ // обновляем список врагов раз в two = 50 (чем меньше число тем чаще обновляется список и тем сильнее нагрузка на ПК)
 			try
 			{

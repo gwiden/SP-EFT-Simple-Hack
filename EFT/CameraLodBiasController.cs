@@ -6,10 +6,10 @@ namespace EFT.CameraControl
 {
 	public class CameraLodBiasController : MonoBehaviour
 	{
-		public void Awake()
-		{
-			//this.float_0 = base.GetComponent<Camera>().fieldOfView;
-		}
+        //public void Awake()
+        //{
+        //    this.float_0 = base.GetComponent<Camera>().fieldOfView;
+        //}
 
         //public void SetMaxFov(float fov)
         //{
@@ -37,7 +37,7 @@ namespace EFT.CameraControl
         //}
 
         // Token: 0x0600787B RID: 30843 RVA: 0x002E8CA8 File Offset: 0x002E6EA8
-        private void FixedUpdate()
+        private void Update()
         {
             if (Input.GetKeyDown(KeyCode.PageUp))
             {

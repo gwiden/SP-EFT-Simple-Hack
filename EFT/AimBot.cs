@@ -44,7 +44,7 @@ namespace EFT
             }
         }
         
-        private void Update()
+        private void FixedUpdate()
         { //поиск врагов на сцене
             try
             {
